@@ -1,0 +1,22 @@
+<h2>Por País</h2>
+<hr>
+<div class="row">
+  <div class="col">
+    <!-- busquedas-->
+
+    <shared-search-box (onValue)="searchbyCountry($event)" placeHolder="Buscar por País" ></shared-search-box>
+
+  </div>
+</div>
+
+<div class="row">
+  <div class="col">
+<!-- tabla de resultados-->
+<hr>
+
+   <country-table [countriesTable]="countriesByCountry"> </country-table>
+<!-- <ul>
+  <li *ngFor="let countri of countriesByCapital" > {{countri.capital}} </li>
+</ul> -->
+  </div>
+</div>
